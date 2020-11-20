@@ -1,7 +1,7 @@
 #exception : ten, eleven, twelve, thirteen, fifteen
 #teen
 #ty
-#special case : depan ada 2,3,5
+#special case : depan ada 2,3,4,5
 
 kata=['','one','two','three','four','five','six','seven','eight','nine']
 
@@ -21,6 +21,8 @@ def num(n:int):
             return 'twenty ' + num(n%10)
         elif n//10 == 3:
             return 'thirty ' + num(n%10)
+        elif n//10 == 4:
+            return 'forty ' + num(n%10)
         elif n//10 == 5:
             return 'fifty ' + num(n%10)
         else :
@@ -46,8 +48,8 @@ while True:
     print("        WELCOME to TANAMAN'S ENGLISH CONVERTER        ")
     print("======================================================")
     try:
-        bil=int(input("Number\t? "))
-        print(f"{bil:,} = {num(bil)}")
+        bil=int(input("Number\t\t? "))
+        print(f"{bil:,}\t= {num(bil)}")
     except:
         print("Numbers only la bro aiyah")
     print()
